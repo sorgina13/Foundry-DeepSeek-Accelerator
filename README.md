@@ -1,4 +1,4 @@
-# DeepSeek on Microsoft Foundry Accelerator
+# Microsoft Foundry DeepSeek Accelerator
 
 A modular accelerator for evaluating, deploying and operationalising DeepSeek on Microsoft Foundry.
 
