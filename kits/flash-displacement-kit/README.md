@@ -1,6 +1,6 @@
 # Flash Displacement Kit
 
-**Status:** Current release
+**Status:** Available
 
 The Flash Displacement Kit evaluates DeepSeek V4 Flash on Microsoft Foundry against
 your own workloads and produces a routing decision: which traffic moves, which stays,
