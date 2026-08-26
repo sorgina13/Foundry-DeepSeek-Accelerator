@@ -1,10 +1,12 @@
 # Flash Displacement Kit
 
+**Status:** Current release
+
 The Flash Displacement Kit evaluates DeepSeek V4 Flash on Microsoft Foundry against
 your own workloads and produces a routing decision: which traffic moves, which stays,
 and what the move is worth.
 
-[Back to the accelerator roadmap](README.md#roadmap).
+[Back to the accelerator roadmap](../../README.md#roadmap).
 
 ---
 
@@ -43,7 +45,7 @@ move down a tier — not whether Flash can replace a frontier model on your hard
 tasks. It cannot, and the kit does not test as though it can.
 
 If your question is about complex reasoning or long-context analytical work, see the
-[Pro Reasoning Kit on the accelerator roadmap](README.md#roadmap).
+[Pro Reasoning Kit on the accelerator roadmap](../../README.md#roadmap).
 
 ### `DeepSeek-V4-Flash-0731` specifics
 
