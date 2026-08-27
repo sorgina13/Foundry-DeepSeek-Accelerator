@@ -1,0 +1,10 @@
+{"id":"1","category":"summary","prompt":"Summarize Azure AI Foundry in 100 words."}
+{"id":"2","category":"classification","prompt":"Classify this support ticket as Billing, Security or Networking: DNS lookup fails over VPN."}
+{"id":"3","category":"qa","prompt":"What is a managed identity?"}
+{"id":"4","category":"rewrite","prompt":"Rewrite this email professionally: We need the logs ASAP."}
+{"id":"5","category":"code","prompt":"Write a Python function that calculates an average."}
+{"id":"6","category":"extraction","prompt":"Extract name and date from: John Smith met us on 12 Aug 2026."}
+{"id":"7","category":"reasoning","prompt":"List three reasons latency may increase."}
+{"id":"8","category":"math","prompt":"What is 25*43?"}
+{"id":"9","category":"json","prompt":"Return a JSON object representing a VM."}
+{"id":"10","category":"long","prompt":"Explain Azure networking in 200 words."}
