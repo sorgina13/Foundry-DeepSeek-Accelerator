@@ -1,0 +1,7 @@
+model,phase,projected_1000_item_cost_usd,mean_cache_hit_ratio,mean_latency_ms,mean_output_tokens,mean_knn_similarity,mean_reference_similarity,evaluator_quality,quality_source
+DeepSeek-V4-Flash,cold,0.3261681,0.0,434.73,119.75,0.9742152370582116,0.1876556477877709,,not evaluated in synthetic mode
+DeepSeek-V4-Flash,warm,0.13080978,0.8717308514438042,435.0,122.75,0.9745503707909644,0.1864567722706303,,not evaluated in synthetic mode
+gpt-4.1-mini,cold,0.8072960000000001,0.0,625.03,155.75,0.9741008120295572,0.18763810897484134,,not evaluated in synthetic mode
+gpt-4.1-mini,warm,0.447488,0.8717308514438042,624.99,158.75,0.9744374934513348,0.1864402424094019,,not evaluated in synthetic mode
+gpt-5.4,cold,5.55435,0.0,529.88,137.75,0.9722830976327217,0.1870059594589334,,not evaluated in synthetic mode
+gpt-5.4,warm,2.8647899999999997,0.8717308514438042,529.995,140.75,0.9726413897254905,0.18583070841417978,,not evaluated in synthetic mode

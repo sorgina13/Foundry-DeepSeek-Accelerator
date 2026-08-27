@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-08-27T09:52:32.861700+00:00",
+  "execution_mode": "synthetic",
+  "live_model_calls_enabled": false,
+  "foundry_assets_enabled": false,
+  "foundry_evaluation_runs_enabled": false,
+  "dataset": {
+    "path": "foundry_eval_dataset.jsonl",
+    "sha256": "50d3909d39b2140ab766a84f613228b1bd7e432f28d44cdb91e7f89f2a839bae",
+    "rows": 100
+  },
+  "pricing": {
+    "path": "model_pricing.json",
+    "sha256": "ff1563f2b0de1a8f8461b37e10a6e24b95cf80ffb4303d655b357194767a7ee7",
+    "retrieved_date": "2026-08-27",
+    "rates": [
+      {
+        "deployment": "DeepSeek-V4-Flash",
+        "model": "DeepSeek-V4-Flash",
+        "context_qualification": null,
+        "input_usd": 0.19,
+        "cached_input_usd": 0.028,
+        "output_usd": 0.51,
+        "source_url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/"
+      },
+      {
+        "deployment": "gpt-5.4",
+        "model": "GPT-5.4",
+        "context_qualification": "under 272K context",
+        "input_usd": 2.5,
+        "cached_input_usd": 0.25,
+        "output_usd": 15.0,
+        "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+      },
+      {
+        "deployment": "gpt-4.1-mini",
+        "model": "GPT-4.1-mini",
+        "context_qualification": null,
+        "input_usd": 0.4,
+        "cached_input_usd": 0.1,
+        "output_usd": 1.6,
+        "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+      }
+    ]
+  },
+  "experiment": {
+    "models": [
+      "DeepSeek-V4-Flash",
+      "gpt-5.4",
+      "gpt-4.1-mini"
+    ],
+    "warm_repetitions": 2,
+    "cache_experiment_enabled": true,
+    "max_completion_tokens": 2048,
+    "random_seed": 42,
+    "observations": 900
+  },
+  "embeddings": {
+    "embedding_tokens": 0,
+    "embedding_cost_usd": 0.0,
+    "embedding_method": "local deterministic TF-IDF validation"
+  },
+  "quality_source": "not evaluated in synthetic mode",
+  "packages": {
+    "azure-ai-projects": "2.5.0",
+    "azure-identity": "1.25.3",
+    "openai": "3.3.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.9.0"
+  },
+  "limitations": [
+    "Synthetic token, cache, latency, response, and similarity values are illustrative.",
+    "Cosine similarity measures semantic consistency, not factual correctness or safety.",
+    "Pearson correlation measures centered embedding-coordinate alignment and is a secondary diagnostic, not a quality score.",
+    "PCA distances are a two-dimensional visualization approximation.",
+    "The 1,000-unit projections are linear estimates from observed means.",
+    "Embedding charges are separate from generation charges."
+  ],
+  "artifacts": {
+    "detailed_results": "analysis_results\\benchmark_detailed_results.csv",
+    "run_summary": "analysis_results\\benchmark_run_summary.csv",
+    "model_summary": "analysis_results\\benchmark_model_summary.csv",
+    "decision_summary": "analysis_results\\decision_summary.csv",
+    "similarity_pairs": "analysis_results\\similarity_pairs.csv",
+    "similarity_summary": "analysis_results\\similarity_summary.csv",
+    "matched_cross_model_pairs": "analysis_results\\matched_cross_model_pairs.csv",
+    "model_pair_similarity_summary": "analysis_results\\model_pair_similarity_summary.csv",
+    "model_pair_correlation_summary": "analysis_results\\model_pair_correlation_summary.csv",
+    "projection_summary": "analysis_results\\projection_summary.csv",
+    "output_vectors": "analysis_results\\output_vectors.npy",
+    "decision_chart": "analysis_results\\decision_dashboard.png",
+    "model_pair_similarity_chart": "analysis_results\\model_pair_similarity.png",
+    "model_pair_correlation_chart": "analysis_results\\model_pair_correlation_by_run.png"
+  },
+  "foundry_assets": null
+}

@@ -9,10 +9,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 DEFAULT_MODELS = [
-    "deepseek-v4-flash-3107",
-    "gpt-5-sol",
-    "gpt-5-mini",
+    "DeepSeek-V4-Flash",
+    "gpt-5.4",
+    "gpt-4.1-mini"
 ]
+
 TERMINAL_STATUSES = {"completed", "failed", "canceled", "cancelled"}
 REQUIRED_FIELDS = {
     "name",

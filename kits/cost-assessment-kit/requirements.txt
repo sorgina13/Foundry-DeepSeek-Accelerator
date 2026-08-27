@@ -1,3 +1,10 @@
 azure-identity
 azure-ai-projects>=2.2.0
 openai
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyter
+ipykernel
