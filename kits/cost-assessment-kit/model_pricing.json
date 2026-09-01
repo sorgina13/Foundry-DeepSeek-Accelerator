@@ -1,0 +1,35 @@
+{
+  "currency": "USD",
+  "unit": "per_1m_tokens",
+  "deployment_type": "Global Standard",
+  "retrieved_date": "2026-08-27",
+  "rates": [
+    {
+      "deployment": "DeepSeek-V4-Flash",
+      "model": "DeepSeek-V4-Flash",
+      "context_qualification": null,
+      "input_usd": 0.19,
+      "cached_input_usd": 0.028,
+      "output_usd": 0.51,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/deepseek/"
+    },
+    {
+      "deployment": "gpt-5.4",
+      "model": "GPT-5.4",
+      "context_qualification": "under 272K context",
+      "input_usd": 2.5,
+      "cached_input_usd": 0.25,
+      "output_usd": 15.0,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+    },
+    {
+      "deployment": "gpt-4.1-mini",
+      "model": "GPT-4.1-mini",
+      "context_qualification": null,
+      "input_usd": 0.4,
+      "cached_input_usd": 0.1,
+      "output_usd": 1.6,
+      "source_url": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
+    }
+  ]
+}

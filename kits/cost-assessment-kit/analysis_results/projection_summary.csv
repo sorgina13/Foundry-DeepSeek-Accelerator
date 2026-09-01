@@ -1,0 +1,7 @@
+model,phase,mean,ci95_low,ci95_high
+DeepSeek-V4-Flash,cold,32.61681,,
+DeepSeek-V4-Flash,warm,13.080978,12.981018,13.180938
+gpt-4.1-mini,cold,80.72960000000002,,
+gpt-4.1-mini,warm,44.7488,44.43520000000001,45.0624
+gpt-5.4,cold,555.4350000000001,,
+gpt-5.4,warm,286.479,283.539,289.419
