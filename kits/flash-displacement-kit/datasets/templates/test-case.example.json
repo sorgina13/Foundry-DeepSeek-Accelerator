@@ -1,0 +1,7 @@
+{
+  "id": "sum-001",
+  "segment": "summarisation",
+  "input": "A representative production prompt.",
+  "expected": "The expected outcome or criteria a good answer must meet.",
+  "check": "deterministic"
+}

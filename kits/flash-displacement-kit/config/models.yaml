@@ -1,0 +1,11 @@
+models:
+  flash_ga:
+    deployment: DeepSeek-V4-Flash
+    role: production_target
+  flash_0731:
+    deployment: DeepSeek-V4-Flash-0731
+    role: preview_candidate
+    preview: true
+  baseline:
+    deployment: "<your-current-deployment-name>"
+    role: incumbent

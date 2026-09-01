@@ -1,0 +1,10 @@
+evaluation:
+  repeats: 3
+  minimum_cases_per_segment: 30
+  prompt_variants:
+    - current
+    - reasoning_adapted
+  judge:
+    deployment: "<your-judge-deployment-name>"
+  pass_criteria:
+    use_segment_quality_thresholds: true

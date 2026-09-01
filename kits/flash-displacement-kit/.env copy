@@ -1,0 +1,3 @@
+PROJECT_ENDPOINT="https://fbuild1.services.ai.azure.com/api/projects/pbuild1"
+MODEL_DEPLOYMENT_NAME="DeepSeek-V4-Flash"
+MODEL_DEPLOYMENT_NAME_1="DeepSeek-V4-Flash-0731"

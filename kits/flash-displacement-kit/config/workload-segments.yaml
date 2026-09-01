@@ -1,0 +1,18 @@
+segments:
+  - name: summarisation
+    monthly_requests: 400000
+    avg_input_tokens: 6000
+    avg_output_tokens: 500
+    quality_threshold: 0.90
+
+  - name: classification
+    monthly_requests: 250000
+    avg_input_tokens: 1200
+    avg_output_tokens: 50
+    quality_threshold: 0.95
+
+  - name: long_document_qa
+    monthly_requests: 60000
+    avg_input_tokens: 180000
+    avg_output_tokens: 1200
+    quality_threshold: 0.88
