@@ -1,0 +1,137 @@
+
+<style>
+.scorecard {font-family:Segoe UI,Arial,sans-serif;color:#1f2933;background:#f7f8f5;padding:22px;max-width:1120px}
+.summary {border-top:6px solid #003a8c;padding:18px 0 20px;display:flex;justify-content:space-between;gap:24px;align-items:end}
+.summary h2 {font-size:26px;margin:2px 0 6px;letter-spacing:0}
+.summary p {margin:0;color:#59636e}
+.counts {display:flex;gap:10px;flex-wrap:wrap}
+.count {min-width:72px;padding:8px 12px;background:#fff;border:1px solid #d9ddd7;text-align:center}
+.count strong {display:block;font-size:21px}
+.legend {display:flex;gap:18px;padding:10px 0 18px;border-bottom:1px solid #d9ddd7;font-size:13px}
+.dot {display:inline-block;width:10px;height:10px;margin-right:6px}
+.workload {padding:22px 0;border-bottom:1px solid #d9ddd7}
+.workload-head {display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.workload h3 {margin:0;font-size:20px;letter-spacing:0}
+.eyebrow {font-size:10px;font-weight:700;color:#6b7280}
+.sample {font-size:12px;color:#6b7280;margin-top:3px}
+.verdict {color:#fff;font-weight:800;padding:7px 12px;font-size:12px}
+.metric-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px}
+.metric {background:#fff;border:1px solid #e0e3de;padding:12px}
+.metric-title {font-size:12px;font-weight:800;margin-bottom:8px}
+.bar-row {display:grid;grid-template-columns:72px minmax(90px,1fr) 78px;align-items:center;gap:8px;font-size:11px;margin:6px 0}
+.bar-row strong {text-align:right;font-size:11px}
+.track {height:12px;background:#e9ece8;overflow:hidden}
+.bar {height:100%}
+.baseline {background:#b39ddb}
+.candidate {background:#0f6cbd}
+.reason {margin-top:12px;font-size:13px;color:#4b5563}
+.unavailable {color:#6b7280;font-size:12px}
+@media (max-width:760px) {.summary {display:block} .counts {margin-top:14px} .metric-grid {grid-template-columns:1fr}}
+</style>
+<div class="scorecard">
+  <div class="summary">
+    <div><div class="eyebrow">PORTFOLIO DECISION</div><h2>SELECTIVE DISPLACEMENT</h2><p>DeepSeek-V4-Flash-0731 compared with DeepSeek-V4-Flash</p></div>
+    <div class="counts"><div class="count"><strong>1</strong>Move</div><div class="count"><strong>1</strong>Pilot</div><div class="count"><strong>1</strong>Hold</div></div>
+  </div>
+  <div class="legend"><span><i class="dot" style="background:#b39ddb"></i>Baseline: DeepSeek-V4-Flash</span><span><i class="dot" style="background:#0f6cbd"></i>Candidate: DeepSeek-V4-Flash-0731</span></div>
+  
+    <section class="workload">
+      <div class="workload-head">
+        <div><div class="eyebrow">WORKLOAD</div><h3>Classification</h3><div class="sample">50 examples · 139 runs per model</div></div>
+        <span class="verdict" style="background:#b26a00">PILOT</span>
+      </div>
+      <div class="metric-grid">
+    <div class="metric">
+      <div class="metric-title">Mean quality</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:90.6%"></div></div><strong>91%</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:90.7%"></div></div><strong>91%</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean latency efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:24.4%"></div></div><strong>2,961 ms</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>723 ms</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean token efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:100.0%"></div></div><strong>44</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:99.7%"></div></div><strong>44</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean cost efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:100.0%"></div></div><strong>$0.000009</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:99.7%"></div></div><strong>$0.000009</strong></div>
+    </div>
+    </div>
+      <div class="reason">Quality retained with lower mean latency only</div>
+    </section>
+    
+    <section class="workload">
+      <div class="workload-head">
+        <div><div class="eyebrow">WORKLOAD</div><h3>Extraction</h3><div class="sample">5 examples · 14 runs per model</div></div>
+        <span class="verdict" style="background:#087f5b">MOVE</span>
+      </div>
+      <div class="metric-grid">
+    <div class="metric">
+      <div class="metric-title">Mean quality</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:90.5%"></div></div><strong>90%</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:97.8%"></div></div><strong>98%</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean latency efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:7.5%"></div></div><strong>12,150 ms</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>907 ms</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean token efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:98.7%"></div></div><strong>72</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>71</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean cost efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:98.6%"></div></div><strong>$0.000024</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>$0.000023</strong></div>
+    </div>
+    </div>
+      <div class="reason">Quality retained and lower mean latency, tokens, cost</div>
+    </section>
+    
+    <section class="workload">
+      <div class="workload-head">
+        <div><div class="eyebrow">WORKLOAD</div><h3>Summarisation</h3><div class="sample">50 examples · 146 runs per model</div></div>
+        <span class="verdict" style="background:#b42318">HOLD</span>
+      </div>
+      <div class="metric-grid">
+    <div class="metric">
+      <div class="metric-title">Mean quality</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:70.7%"></div></div><strong>71%</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:71.6%"></div></div><strong>72%</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean latency efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:15.7%"></div></div><strong>5,307 ms</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>833 ms</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean token efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:99.6%"></div></div><strong>77</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>76</strong></div>
+    </div>
+    
+    <div class="metric">
+      <div class="metric-title">Mean cost efficiency</div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash">Baseline</span><div class="track"><div class="bar baseline" style="width:99.4%"></div></div><strong>$0.000025</strong></div>
+      <div class="bar-row"><span title="DeepSeek-V4-Flash-0731">Candidate</span><div class="track"><div class="bar candidate" style="width:100.0%"></div></div><strong>$0.000025</strong></div>
+    </div>
+    </div>
+      <div class="reason">Mean quality 72% is below the 80% absolute floor</div>
+    </section>
+    
+</div>
